@@ -1,0 +1,42 @@
+/* Fonts */
+
+
+/* Variables */
+:root {
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+    --color-red-base: #FB565A;
+    --color-red-focus: #E74246;
+    --color-red-active: #D7373B;
+    --color-green-base: #00CA74;
+    --color-green-focus: #00BC6C;
+    --color-green-active: #00AA62;
+    --color-yellow-base: #EFC849;
+    --color-yellow-focus: #EAB534;
+    --color-yellow-active: #EAB534;
+    --color-grey-base: #EEEEEE;
+    --color-grey-focus: #DFDFDF;
+    --color-grey-active: #D5D5D5;
+    --color-dark-grey: #4D4D4D;
+}
+
+/* Global */
+body {
+  min-width: 960px;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--color-black);
+}
+a {
+  text-decoration: none;
+}
+/* Header */
+
+/* Button */
+.button {
+  font: inherit;
+}

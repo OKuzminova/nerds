@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
     <head>
         <meta charset="UTF-8">
         <title>Nerds – Дизайн студия</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesgeet" href="css/style.css">
+
         <link rel="icon" href="favicon.ico">
         <link rel="icon" href="img/favicon/152.svg" type="image/svg+xml">
         <link rel="apple-touch-icon" href="img/favicon/180.png">
         <link rel="manifest" href="manifest.webmanifest">
     </head>
-    <body>
-        <header>
-            <a>
+    <body class="page-body">
+        <header class="header">
+            <a class="header-logo">
                 <img src="img/icon/nerds-logo.svg" width="159" height="65" alt="Логотип Nerds">
             </a>
-            <nav>
-                <ul>
+            <nav class="header-nav">
+                <ul class="site-nav">
                     <li>
                         <a href="#studio">Студия</a>
                     </li>
@@ -29,70 +33,70 @@
                     </li>
                 </ul>
             </nav>
-            <a href="blank.html" target="_blank">Корзина</a>
+            <a class="base-link" href="blank.html" target="_blank">Корзина</a>
         </header>
 
-        <main>
+        <main class="container">
             <h1>Nerds</h1>
 
-            <section>
+            <section class="character">
                 <h2>Характеристики</h2>
-                <ul>
-                    <li>
+                <ul class="character-list">
+                    <li class="character-item">
                         <h3>Долго, дорого, скрупулезно.</h3>
                         <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-                        <a href="blank.html" target="_blank">УЗНАТЬ БОЛЬШЕ</a>
+                        <a class="button" href="blank.html" target="_blank">УЗНАТЬ БОЛЬШЕ</a>
                     </li>
-                    <li>
+                    <li class="character-item">
                         <h3>Любим математику как никто другой</h3>
                         <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-                        <a href="blank.html" target="_blank">УЗНАТЬ БОЛЬШЕ</a>
+                        <a class="button" href="blank.html" target="_blank">УЗНАТЬ БОЛЬШЕ</a>
                     </li>
-                    <li>
+                    <li class="character-item">
                         <h3>Только ночь, только хардкор</h3>
                         <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-                        <a href="blank.html" target="_blank">УЗНАТЬ БОЛЬШЕ</a>
+                        <a class="button" href="blank.html" target="_blank">УЗНАТЬ БОЛЬШЕ</a>
                     </li>
                 </ul>
             </section>
 
-            <section>
+            <section class="service">
                 <h2>Каталог услуг</h2>
-                <ul>
-                    <li>
+                <ul class="service-list">
+                    <li class="service-item">
                         <img src="img/services-1.png" width="300" height="146" alt="">
                         <h3>Веб-сайты</h3>
                         <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-                        <a href="blank.html" target="_blank">Заказать</a>
+                        <a class="button" href="blank.html" target="_blank">Заказать</a>
                     </li>
-                    <li>
+                    <li class="service-item">
                         <img src="img/services-2.png" width="300" height="146" alt="">
                         <h3>Приложения</h3>
                         <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-                        <a href="blank.html" target="_blank">Заказать</a>
+                        <a class="button" href="blank.html" target="_blank">Заказать</a>
                     </li>
-                    <li>
+                    <li class="service-item">
                         <img src="img/services-3.png" width="300" height="146" alt="">
                         <h3>Презентации</h3>
                         <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-                        <a href="blank.html" target="_blank">Заказать</a>
+                        <a class="button" href="blank.html" target="_blank">Заказать</a>
                     </li>
                 </ul>
             </section>
 
-            <section>
+            <section class="studio">
                 <h2>О студии</h2>
-                <div>
+                <div class="studio-text">
                     <h3>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
                     <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчетпревыше креатива. Работаем не покладая рук, как роботы.</p>
                     <p><strong>Выполняем заказы на разработку:</strong></p>
                     <ul>
                         <li>Веб-сайтов любой сложности</li>
-                        <li>Мобильных приложений для iOS и Android</li> 
+                        <li>Мобильных приложений для iOS и Android</li>
                         <li>Слайдшоу и видео для корпоративных презентаций</li>
                     </ul>
                 </div>
-                <div>
+                <div class="studio-subtitle">
                     <img src="img/logo-nerds.png" width="360" height="208" alt="Логотип Nerds">
                     <p><strong>с 2004 года Любим точность во всем:</strong></p>
                     <ul>
@@ -133,25 +137,25 @@
             </section>
         </main>
 
-        <footer>
-            <section>
+        <footer class="footer">
+            <section class="footer-contacts">
                 <h2>Контакты</h2>
                 <h3>NЁRDS DESIGN STUDIO</h3>
-                <p>наб. Реки Карповки, 5 лит П, Санкт-Петербург <a href="tel:+78005558628" title="+7 800 555-86-28">+7 800 555-86-28</a></p>
+                <p>наб. Реки Карповки, 5 лит П, Санкт-Петербург <a class="contacts-phone" href="tel:+78005558628" title="+7 800 555-86-28">+7 800 555-86-28</a></p>
                 <p>
-                    <a href="#">Напишите нам</a>
+                    <a class="button" href="#">Напишите нам</a>
                 </p>
             </section>
-            <section>
+            <section class="footer-social">
                 <h2>Социальные сети</h2>
                 <p>
-                    <a href=""><img src="img/icon/vk.svg" width="26" height="15" alt="Вконтакте"></a>
+                    <a class="social-button" href="#"><img src="img/icon/vk.svg" width="26" height="15" alt="Вконтакте"></a>
                 </p>
                 <p>
-                    <a href=""><img src="img/icon/fb.svg" width="12" height="22" alt="Facebook"></a>
+                    <a class="social-button" href="#"><img src="img/icon/fb.svg" width="12" height="22" alt="Facebook"></a>
                 </p>
                 <p>
-                    <a href=""><img src="img/icon/insta.svg" width="21" height="21" alt="Instagram"></a>
+                    <a class="social-button" href="#"><img src="img/icon/insta.svg" width="21" height="21" alt="Instagram"></a>
                 </p>
                 <p>
                     <strong>Давайте дружить, это выгодно!</strong><br>
@@ -160,23 +164,23 @@
             </section>
         </footer>
 
-        <section>
+        <section class="modal">
             <h2>Напишите нам</h2>
-            <button type="button">Закрыть</button>
-            <form action="https://echo.htmlacademy.ru" method="post">
-                <label>
+            <button class="modal-close" type="button">Закрыть</button>
+            <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+                <label class="modal-item">
                     Ваше имя:
                     <input id="fullName" type="text" name="fullName" placeholder="Имя Фамилия">
                 </label>
-                <label>
+                <label class="modal-item">
                     Ваш email:
                     <input id="userEmail" type="email" name="userEmail" placeholder="email@example.com">
                 </label>
-                <label>
+                <label class="modal-item">
                     Текст письма:
                     <textarea id="contentMessage" name="contentMessage" placeholder="В свободной форме"></textarea>
                 </label>
-                <button type="submit">Отправить</button>
+                <button class="button" type="submit">Отправить</button>
             </form>
         </section>
     </body>
