@@ -13,11 +13,15 @@
     --color-green-active: #00AA62;
     --color-yellow-base: #EFC849;
     --color-yellow-focus: #EAB534;
-    --color-yellow-active: #EAB534;
+    --color-yellow-active: #E5A722;
     --color-grey-base: #EEEEEE;
     --color-grey-focus: #DFDFDF;
     --color-grey-active: #D5D5D5;
     --color-dark-grey: #4D4D4D;
+    --color-grey-light: #E1E1E1;
+    --color-grey-light2: #DBDBDB;
+    --color-grey-border: #D7DCDE;
+    --color-grey-border-focus: #B4B9BB;
 }
 
 /* Global */
@@ -33,10 +37,177 @@ body {
 }
 a {
   text-decoration: none;
+  color: var(--color-black);
+}
+a:hover {
+  color: var(--color-red-base);
+}
+a:active {
+  color: rgba(0, 1, 1, 0.3);
+}
+input {
+  border: none;
+  outline: none;
+  font: inherit;
+  padding: 16px 14px;
+  line-height: 18px;
+  border-radius: 3px;
+  border: 2px solid var(--color-grey-border);
+  background: var(--color-white);
+}
+input:hover {
+  border: 2px solid var(--color-grey-border-focus);
+}
+input:focus {
+  border: 2px solid var(--color-black);
+  color: var(--color-black);
+}
+input:invalid {
+  border: 2px solid var(--color-red-focus);
+  color: var(--color-red-focus);
 }
 /* Header */
 
 /* Button */
 .button {
   font: inherit;
+  border: none;
+  border-radius: 3px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: var(--color-red-base);
+  color: var(--color-grey-base);
+  padding: 17px 39px 15px 40px;
+}
+.button:hover {
+  background-color: var(--color-red-focus);
+  color: var(--color-white);
+}
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background: var(--color-red-active);
+  box-shadow: 0px 3px 0px 0px rgba(0, 1, 1, 0.10) inset;
+}
+.button__slider {
+  padding: 16px 54px;
+}
+
+.button__green {
+  background-color: var(--color-green-base);
+}
+.button__green:hover {
+  background-color: var(--color-green-focus);
+}
+.button__green:active {
+  background-color: var(--color-green-active);
+}
+
+.button__yellow {
+  background-color: var(--color-yellow-base);
+}
+.button__yellow:hover {
+  background-color: var(--color-yellow-focus);
+}
+.button__yellow:active {
+  background-color: var(--color-yellow-active);
+}
+
+.button__grey {
+  background-color: var(--color-grey-base);
+  padding: 17px 89px 15px 88px;
+  color: var(--color-black);
+}
+.button__grey:hover {
+  background-color: var(--color-grey-focus);
+  color: var(--color-black);
+}
+.button__grey:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: var(--color-grey-active);
+  box-shadow: 0px 3px 0px 0px rgba(0, 1, 1, 0.10) inset;
+}
+
+.button__footer {
+  padding: 17px 45px 15px 44px;
+}
+
+.button__modal {
+  padding: 17px 83px 15px;
+}
+
+.button__maket {
+  padding: 17px 72px 15px;
+}
+
+.button__pagination {
+  background-color: var(--color-grey-base);
+  padding: 17px 20px 15px;
+  color: var(--color-black);
+}
+.button__pagination:hover{
+  background-color: var(--color-grey-focus);
+  color: var(--color-black);
+}
+.button__pagination:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: var(--color-grey-active);
+  box-shadow: 0px 3px 0px 0px rgba(0, 1, 1, 0.10) inset;
+}
+.button__pagination--active {
+  border: 3px solid var(--color-grey-light2);
+  background-color: var(--color-white);
+}
+.button__pagination--active:active {
+  color: rgba(0, 0, 0, 0.3);
+  border-top: 3px rgba(0, 1, 1, 0.10) inset;
+}
+
+
+/* Header */
+.header-logo:hover {
+  opacity: 0.7;
+}
+.header-logo:active {
+  opacity: 0.3;
+}
+
+
+/* Client */
+.client-logo {
+  opacity: 0.2;
+}
+.client-logo:hover {
+  opacity: 1;
+}
+.client-logo:active {
+  opacity: 0.1;
+}
+
+
+/* Footer */
+.social-button {
+  background-color: var(--color-grey-light);
+  border-radius: 50px;
+  padding: 30px;
+  line-height: 0px;
+}
+.social-button:hover {
+  background-color: var(--color-red-focus);
+}
+.social-button:active {
+  background-color: var(--color-red-active);
+  box-shadow: 0px 3px 0px 0px rgba(0, 1, 1, 0.10) inset;
+}
+.social-button:active img{
+  opacity: 0.3;
+}
+
+.social-button-vk {
+  padding: 33px 28px 33px 27px;
+}
+
+.social-button-fb{
+  padding: 31px 34px 28px 35px;
 }

@@ -5,7 +5,7 @@
         <title>Nerds – Дизайн студия</title>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesgeet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css">
 
         <link rel="icon" href="favicon.ico">
         <link rel="icon" href="img/favicon/152.svg" type="image/svg+xml">
@@ -14,7 +14,7 @@
     </head>
     <body class="page-body">
         <header class="header">
-            <a class="header-logo">
+            <a class="header-logo" href="#">
                 <img src="img/icon/nerds-logo.svg" width="159" height="65" alt="Логотип Nerds">
             </a>
             <nav class="header-nav">
@@ -45,17 +45,17 @@
                     <li class="character-item">
                         <h3>Долго, дорого, скрупулезно.</h3>
                         <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-                        <a class="button" href="blank.html" target="_blank">УЗНАТЬ БОЛЬШЕ</a>
+                        <a class="button button__slider" href="blank.html" target="_blank">УЗНАТЬ БОЛЬШЕ</a>
                     </li>
                     <li class="character-item">
                         <h3>Любим математику как никто другой</h3>
                         <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-                        <a class="button" href="blank.html" target="_blank">УЗНАТЬ БОЛЬШЕ</a>
+                        <a class="button button__slider" href="blank.html" target="_blank">УЗНАТЬ БОЛЬШЕ</a>
                     </li>
                     <li class="character-item">
                         <h3>Только ночь, только хардкор</h3>
                         <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-                        <a class="button" href="blank.html" target="_blank">УЗНАТЬ БОЛЬШЕ</a>
+                        <a class="button button__slider" href="blank.html" target="_blank">УЗНАТЬ БОЛЬШЕ</a>
                     </li>
                 </ul>
             </section>
@@ -73,13 +73,13 @@
                         <img src="img/services-2.png" width="300" height="146" alt="">
                         <h3>Приложения</h3>
                         <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-                        <a class="button" href="blank.html" target="_blank">Заказать</a>
+                        <a class="button button__green" href="blank.html" target="_blank">Заказать</a>
                     </li>
                     <li class="service-item">
                         <img src="img/services-3.png" width="300" height="146" alt="">
                         <h3>Презентации</h3>
                         <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-                        <a class="button" href="blank.html" target="_blank">Заказать</a>
+                        <a class="button button__yellow" href="blank.html" target="_blank">Заказать</a>
                     </li>
                 </ul>
             </section>
@@ -116,22 +116,28 @@
                 </div>
             </section>
 
-            <section>
+            <section class="client">
                 <h2>Клиенты</h2>
                 <div>
                     <p>
-                        <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+                        <a class="client-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
                             <img src="img/partners/htmlacademy.png" alt="Логотип html academy">
                         </a>
                     </p>
                     <p>
-                        <img src="img/partners/barbershop-borodinski.png" alt="Логотип Barbershop Borodinski">
+                        <a class="client-logo" href="">
+                          <img src="img/partners/barbershop-borodinski.png" alt="Логотип Barbershop Borodinski">
+                        </a>
                     </p>
                     <p>
+                      <a class="client-logo" href="">
                         <img src="img/partners/pink.png" alt="Логотип Pink">
+                      </a>
                     </p>
                     <p>
+                      <a class="client-logo" href="">
                         <img src="img/partners/mishka.png" alt="Логотип Mishka">
+                      </a>
                     </p>
                 </div>
             </section>
@@ -143,16 +149,16 @@
                 <h3>NЁRDS DESIGN STUDIO</h3>
                 <p>наб. Реки Карповки, 5 лит П, Санкт-Петербург <a class="contacts-phone" href="tel:+78005558628" title="+7 800 555-86-28">+7 800 555-86-28</a></p>
                 <p>
-                    <a class="button" href="#">Напишите нам</a>
+                    <a class="button button__footer" href="#">Напишите нам</a>
                 </p>
             </section>
             <section class="footer-social">
                 <h2>Социальные сети</h2>
                 <p>
-                    <a class="social-button" href="#"><img src="img/icon/vk.svg" width="26" height="15" alt="Вконтакте"></a>
+                    <a class="social-button social-button-vk" href="#"><img src="img/icon/vk.svg" width="26" height="15" alt="Вконтакте"></a>
                 </p>
                 <p>
-                    <a class="social-button" href="#"><img src="img/icon/fb.svg" width="12" height="22" alt="Facebook"></a>
+                    <a class="social-button social-button-fb" href="#"><img src="img/icon/fb.svg" width="12" height="22" alt="Facebook"></a>
                 </p>
                 <p>
                     <a class="social-button" href="#"><img src="img/icon/insta.svg" width="21" height="21" alt="Instagram"></a>
@@ -180,7 +186,7 @@
                     Текст письма:
                     <textarea id="contentMessage" name="contentMessage" placeholder="В свободной форме"></textarea>
                 </label>
-                <button class="button" type="submit">Отправить</button>
+                <button class="button button__modal" type="submit">Отправить</button>
             </form>
         </section>
     </body>
