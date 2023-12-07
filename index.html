@@ -14,53 +14,56 @@
     </head>
     <body class="page-body">
         <header class="header">
-            <a class="header-logo" href="#">
+          <nav class="header-nav container">
+            <div>
+              <a class="header-logo" href="#">
                 <img src="img/icon/nerds-logo.svg" width="159" height="65" alt="Логотип Nerds">
-            </a>
-            <nav class="header-nav">
-                <ul class="site-nav">
-                    <li>
-                        <a href="#studio">Студия</a>
-                    </li>
-                    <li>
-                        <a href="#client">Клиенты</a>
-                    </li>
-                    <li>
-                        <a href="catalog.html">Магазин</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <a class="base-link" href="blank.html" target="_blank">Корзина</a>
+              </a>
+            </div>
+            <ul class="site-nav">
+                <li>
+                    <a href="#studio">Студия</a>
+                </li>
+                <li>
+                    <a href="#client">Клиенты</a>
+                </li>
+                <li>
+                    <a href="catalog.html">Магазин</a>
+                </li>
+                <li>
+                    <a href="#contact">Контакты</a>
+                </li>
+            </ul>
+            <div>
+              <a href="blank.html" target="_blank">Корзина</a>
+            </div>
+          </nav>
+          <!-- <h1>Nerds</h1> -->
         </header>
 
-        <main class="container">
-            <h1>Nerds</h1>
+        <main>
+          <section class="character">
+            <h2>Характеристики</h2>
+            <ul class="character-list container">
+                <li class="character-item">
+                    <h3 class="h1">Долго, дорого, скрупулезно.</h3>
+                    <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                    <a class="button button__slider" href="blank.html" target="_blank">УЗНАТЬ БОЛЬШЕ</a>
+                </li>
+                <li class="character-item">
+                    <h3 class="h1">Любим математику как никто другой</h3>
+                    <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+                    <a class="button button__slider" href="blank.html" target="_blank">УЗНАТЬ БОЛЬШЕ</a>
+                </li>
+                <li class="character-item">
+                    <h3 class="h1">Только ночь, только хардкор</h3>
+                    <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                    <a class="button button__slider" href="blank.html" target="_blank">УЗНАТЬ БОЛЬШЕ</a>
+                </li>
+            </ul>
+        </section>
 
-            <section class="character">
-                <h2>Характеристики</h2>
-                <ul class="character-list">
-                    <li class="character-item">
-                        <h3 class="h1">Долго, дорого, скрупулезно.</h3>
-                        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-                        <a class="button button__slider" href="blank.html" target="_blank">УЗНАТЬ БОЛЬШЕ</a>
-                    </li>
-                    <li class="character-item">
-                        <h3 class="h1">Любим математику как никто другой</h3>
-                        <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-                        <a class="button button__slider" href="blank.html" target="_blank">УЗНАТЬ БОЛЬШЕ</a>
-                    </li>
-                    <li class="character-item">
-                        <h3 class="h1">Только ночь, только хардкор</h3>
-                        <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-                        <a class="button button__slider" href="blank.html" target="_blank">УЗНАТЬ БОЛЬШЕ</a>
-                    </li>
-                </ul>
-            </section>
-
-            <section class="service">
+            <section class="service container">
                 <h2>Каталог услуг</h2>
                 <ul class="service-list">
                     <li class="service-item">
@@ -84,8 +87,8 @@
                 </ul>
             </section>
 
-            <section class="studio">
-                <h2>О студии</h2>
+            <section class="studio container">
+                <!-- <h2>О студии</h2> -->
                 <div class="studio-text">
                     <h3 class="h2">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
                     <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчетпревыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -116,9 +119,9 @@
                 </div>
             </section>
 
-            <section class="client">
-                <h2>Клиенты</h2>
-                <div>
+            <section class="client container">
+                <!-- <h2>Клиенты</h2> -->
+                <div class="client-list">
                     <p>
                         <a class="client-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
                             <img src="img/partners/htmlacademy.png" alt="Логотип html academy">
@@ -152,17 +155,19 @@
                     <a class="button button__footer" href="#">Напишите нам</a>
                 </p>
             </section>
-            <section class="footer-social">
-                <h2>Социальные сети</h2>
-                <p>
+            <section class="footer-social container">
+                <!-- <h2>Социальные сети</h2> -->
+                <div>
+                  <p>
                     <a class="social-button social-button-vk" href="#"><img src="img/icon/vk.svg" width="26" height="15" alt="Вконтакте"></a>
-                </p>
-                <p>
-                    <a class="social-button social-button-fb" href="#"><img src="img/icon/fb.svg" width="12" height="22" alt="Facebook"></a>
-                </p>
-                <p>
-                    <a class="social-button" href="#"><img src="img/icon/insta.svg" width="21" height="21" alt="Instagram"></a>
-                </p>
+                  </p>
+                  <p>
+                      <a class="social-button social-button-fb" href="#"><img src="img/icon/fb.svg" width="12" height="22" alt="Facebook"></a>
+                  </p>
+                  <p>
+                      <a class="social-button" href="#"><img src="img/icon/insta.svg" width="21" height="21" alt="Instagram"></a>
+                  </p>
+                </div>
                 <div>
                     <p class="footer-title">Давайте дружить, это выгодно!</p>
                     <p class="footer-subtitle">Скидка 10% для друзей из социальных сетей.</p>

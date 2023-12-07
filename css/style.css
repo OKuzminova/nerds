@@ -37,12 +37,22 @@ body {
   font-weight: 400;
   color: var(--color-black);
   background-color: var(--color-white);
+  background-position: top center;
+  background-repeat: no-repeat;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 header {
   font-style: normal;
   font-weight: 500;
   line-height: 30px;
   text-transform: uppercase;
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
 a {
   text-decoration: none;
@@ -240,11 +250,24 @@ h3.text-bold {
   border-top: 3px rgba(0, 1, 1, 0.10) inset;
 }
 
-
+/* Grid */
+.page {
+  height: 100%;
+}
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 
 /* Header */
 .header {
+  display: grid;
   background-color: var(--color-grey-base);
+}
+.header-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr min-content;
 }
 .header-logo:hover {
   opacity: 0.7;
@@ -258,7 +281,39 @@ h3.text-bold {
   background-color: var(--color-grey-base);
 }
 
+/* Service */
+.service {
+  margin-bottom: 80px;
+}
+.service-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 100px;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+.service-item h3 {
+  margin: 25px 0 16px;
+}
+.service-item p {
+  margin: 0 0 32px;
+}
+
+/* Studio */
+.studio {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 150px;
+}
+
 /* Client */
+.client-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: stretch;
+  text-align: center;
+}
 .client-logo {
   opacity: 0.2;
 }
@@ -271,6 +326,10 @@ h3.text-bold {
 
 
 /* Footer */
+.footer-social {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
 .social-button {
   background-color: var(--color-grey-light);
   border-radius: 50px;
@@ -299,8 +358,26 @@ h3.text-bold {
 
 
 /* catalog HTML */
-h1.h1 {
-  background-color: var(--color-grey-base);
+.page-catalog {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas:
+  "filter sort"
+  "filter catalog";
+}
+.filter {
+  grid-area: filter;
+}
+.sort {
+  grid-area: sort;
+}
+.catalog {
+  grid-area: catalog;
+}
+.h1 {
+  text-align: center;
+  margin: 0;
+  padding: 72px 0 108px;
 }
 
 .sort-item__icon:hover {
