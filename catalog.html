@@ -13,7 +13,7 @@
         <link rel="manifest" href="manifest.webmanifest">
     </head>
     <body class="page-body">
-      <header class="header">
+      <header class="header header-catalog">
           <nav class="header-nav container">
             <div>
               <a class="header-logo" href="index.html">
@@ -34,7 +34,9 @@
                       <a href="#contact">Контакты</a>
                   </li>
               </ul>
-              <div><a href="blank.html" target="_blank">Корзина</a></div>
+              <div class="user-nav">
+                <a href="blank.html" target="_blank">Корзина</a>
+              </div>
           </nav>
           <h1 class="h1">Магазин готовых шаблонов</h1>
         </header>
@@ -42,7 +44,7 @@
         <main class="page-catalog container">
 
             <section class="filter">
-                <h2>Фильтр шаблонов</h2>
+                <!-- <h2>Фильтр шаблонов</h2> -->
                 <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
                     <fieldset>
                         <legend class="text-bold">Стоимость:</legend>
@@ -72,7 +74,7 @@
                         </ul>
                     </fieldset>
                     <fieldset>
-                        <legend  class="text-bold">Особенности:</legend>
+                        <legend class="text-bold">Особенности:</legend>
                         <ul>
                             <li>
                                 <label>
@@ -138,15 +140,15 @@
             </section>
 
             <section class="catalog">
-                <h2>Каталог шаблонов</h2>
+                <!-- <h2>Каталог шаблонов</h2> -->
                 <div class="maket">
                     <div class="maket-header">
                         <div class="maket__icon"></div>
                         <div class="maket__icon"></div>
                         <div class="maket__icon"></div>
                     </div>
-                    <div class="maket-main maket__link">
-                        <a href="#"><img src="img/catalog/maket-sedona.png" width="358" height="578" alt="Макет Sedona"></a>
+                    <div class="maket-main"><!--<div class="maket-main maket__link">-->
+                        <a href="#"><img src="img/catalog/sedona-1.png" width="358" height="578" alt="Макет Sedona"></a>
                     </div>
                     <div class="maket-desk">
                         <p><strong><a href="#">Sedona</a></strong></p>
@@ -228,17 +230,17 @@
                     </div>
                 </div>
                 <div>
-                    <ul>
-                        <li>
+                    <ul class="pagination-list">
+                        <li class="pagination-item">
                             <a class="button button__pagination button__pagination--active" href="">1</a>
                         </li>
-                        <li>
+                        <li class="pagination-item">
                             <a class="button button__pagination" href="#">2</a>
                         </li>
-                        <li>
+                        <li class="pagination-item">
                             <a class="button button__pagination" href="#">3</a>
                         </li>
-                        <li>
+                        <li class="pagination-item">
                             <a class="button button__pagination" href="#">Следующая</a>
                         </li>
                     </ul>
