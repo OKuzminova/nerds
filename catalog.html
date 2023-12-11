@@ -1,309 +1,291 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <title>Nerds – Каталог шаблонов</title>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css">
+  <head>
+      <meta charset="UTF-8">
+      <title>Nerds – Каталог шаблонов</title>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/style.css">
 
-        <link rel="icon" href="favicon.ico">
-        <link rel="icon" href="img/favicon/152.svg" type="image/svg+xml">
-        <link rel="apple-touch-icon" href="img/favicon/180.png">
-        <link rel="manifest" href="manifest.webmanifest">
-    </head>
-    <body class="page-body">
-      <header class="header header-catalog">
-          <nav class="header-nav container">
-            <div>
-              <a class="header-logo" href="index.html">
-                <img src="img/icon/nerds-logo.svg" width="159" height="65" alt="Логотип Nerds">
-              </a>
-            </div>
-            <ul class="site-nav">
-                  <li>
-                      <a href="#studio">Студия</a>
-                  </li>
-                  <li>
-                      <a href="#client">Клиенты</a>
-                  </li>
-                  <li>
-                      <a href="#" target="_blank">Магазин</a>
-                  </li>
-                  <li>
-                      <a href="#contact">Контакты</a>
-                  </li>
-              </ul>
-              <div class="user-nav">
-                <a href="blank.html" target="_blank">Корзина</a>
-              </div>
-          </nav>
-          <h1 class="h1">Магазин готовых шаблонов</h1>
-        </header>
+      <link rel="icon" href="favicon.ico">
+      <link rel="icon" href="img/favicon/152.svg" type="image/svg+xml">
+      <link rel="apple-touch-icon" href="img/favicon/180.png">
+      <link rel="manifest" href="manifest.webmanifest">
+  </head>
+  <body class="page-body">
+    <header class="header header-catalog">
+      <nav class="header-nav container">
+        <div>
+          <a class="header-logo" href="index.html">
+            <img src="img/icon/nerds-logo.svg" width="159" height="65" alt="Логотип Nerds">
+          </a>
+        </div>
+        <ul class="site-nav">
+              <li>
+                  <a href="index.html#studio">Студия</a>
+              </li>
+              <li>
+                  <a href="index.html#client">Клиенты</a>
+              </li>
+              <li>
+                  <a href="#">Магазин</a>
+              </li>
+              <li>
+                  <a href="#contact">Контакты</a>
+              </li>
+          </ul>
+          <div class="user-nav">
+            <a href="blank.html" target="_blank">Корзина</a>
+          </div>
+      </nav>
+      <h1 class="h1">Магазин готовых шаблонов</h1>
+    </header>
 
-        <main class="page-catalog container">
+    <main class="page-catalog container">
 
-            <section class="filter">
-                <h2 class="visually-hidden">Фильтр шаблонов</h2>
-                <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
-                    <fieldset>
-                        <legend class="text-bold">Стоимость:</legend>
-                        <input id="filter-price" name="filter-price" type="range" min="0" max="1500" step="10" value="1">
-                        <p>От <output id="valueMin">0</output></p>
-                        <p>До <output id="valueMax">1500</output></p>
-                    </fieldset>
-                    <fieldset>
-                        <legend class="text-bold">Сетка:</legend>
-                        <ul>
-                            <li>
-                                <label>
-                                    <input id="filter-adaptive" name="grid-layout" type="radio" checked>
-                                    Адаптивная
-                                </label>
-                            </li>
-                            <li>
-                                <label>
-                                    <input id="filter-fix" name="grid-layout" type="radio">
-                                    Фиксированная
-                                </label>
-                            </li>
-                            <li>
-                                <input id="filter-flexible" name="grid-layout" type="radio">
-                                Резиновая
-                            </li>
-                        </ul>
-                    </fieldset>
-                    <fieldset>
-                        <legend class="text-bold">Особенности:</legend>
-                        <ul>
-                            <li>
-                                <label>
-                                    <input id="filter-slider" name="slider" type="checkbox" checked>
-                                    Слайдер
-                                </label>
-                            </li>
-                            <li>
-                                <label>
-                                    <input id="filter-advantages" name="advantages" type="checkbox">
-                                    Блок преимуществ
-                                </label>
-                            </li>
-                            <li>
-                                <label>
-                                    <input id="filter-news" name="news" type="checkbox" checked>
-                                    Новости
-                                </label>
-                            </li>
-                            <li>
-                                <label>
-                                    <input id="filter-gallery" name="gallery" type="checkbox">
-                                    Галерея
-                                </label>
-                            </li>
-                            <li>
-                                <label>
-                                    <input id="filter-basket" name="basket" type="checkbox">
-                                    Корзина
-                                </label>
-                            </li>
-                        </ul>
-                    </fieldset>
-                    <button class="button button__grey" type="submit">Показать</button>
-                </form>
-            </section>
-
-            <section class="sort">
-                <h3 class="text-bold">Сортировать:</h3>
-                <ul class="sort-list">
-                    <li class="sort-item">
-                        <a href="#">По цене</a>
-                    </li>
-                    <li class="sort-item">
-                        <a href="#">По типу</a>
-                    </li>
-                    <li class="sort-item">
-                        <a href="#">По названию</a>
-                    </li>
-                </ul>
-                <ul class="sort-list">
-                    <li class="sort-item">
-                        <a class="sort-item__icon" href="#">
-                            <img src="img/icon/arrow-down.svg" width="11" height="10" alt="Вниз">
-                        </a>
-                    </li>
-                    <li class="sort-item">
-                        <a href="#">
-                            <img src="img/icon/arrow-up.svg" width="11" height="10" alt="Вверх">
-                        </a>
-                    </li>
-                </ul>
-            </section>
-
-            <section class="catalog">
-                <h2 class="visually-hidden">Каталог шаблонов</h2>
-                <div class="maket">
-                    <div class="maket-header">
-                        <div class="maket__icon"></div>
-                        <div class="maket__icon"></div>
-                        <div class="maket__icon"></div>
-                    </div>
-                    <div class="maket-main"><!--<div class="maket-main maket__link">-->
-                        <a href="#"><img src="img/catalog/sedona-1.png" width="358" height="578" alt="Макет Sedona"></a>
-                    </div>
-                    <div class="maket-desk">
-                        <p><strong><a href="#">Sedona</a></strong></p>
-                        <p class="maket-subtitle">Информационный сайт для туристов</p>
-                        <p>
-                            <a class="button button__maket" href="#">9 900 ₽</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="maket">
-                    <div class="maket-header">
-                        <div class="maket__icon"></div>
-                        <div class="maket__icon"></div>
-                        <div class="maket__icon"></div>
-                    </div>
-                    <div class="maket-main">
-                        <a href="#"><img src="img/catalog/maket-pink-app.png" width="358" height="578" alt="Макет Pink App"></a>
-                    </div>
-                    <div class="maket-desk">
-                        <p><strong><a href="#">Pink App</a></strong></p>
-                        <p class="maket-subtitle">Продуктовый лендинг приложения для iOS и Android</p>
-                        <p>
-                            <a class="button button__maket" href="#">9 900 ₽</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="maket">
-                    <div class="maket-header">
-                        <div class="maket__icon"></div>
-                        <div class="maket__icon"></div>
-                        <div class="maket__icon"></div>
-                    </div>
-                    <div class="maket-main">
-                        <a href="#"><img src="img/catalog/maket-barbershop-borodinski.png" width="358" height="578" alt="Макет Barbershop Borodinski"></a>
-                    </div>
-                </div>
-                <div class="maket">
-                    <div class="maket-header">
-                        <div class="maket__icon"></div>
-                        <div class="maket__icon"></div>
-                        <div class="maket__icon"></div>
-                    </div>
-                    <div class="maket-main">
-                        <a href="#"><img src="img/catalog/maket-mishka.png" width="358" height="578" alt="Макет Mishka"></a>
-                    </div>
-                </div>
-                <div class="maket">
-                    <div class="maket-header">
-                        <div class="maket__icon"></div>
-                        <div class="maket__icon"></div>
-                        <div class="maket__icon"></div>
-                    </div>
-                    <div class="maket-main">
-                        <a href="#"><img src="img/catalog/maket-a-plus.png" width="358" height="578" alt="Макет A Plus"></a>
-                    </div>
-                    <div class="maket-desk">
-                        <p><strong><a href="#">A Plus</a></strong></p>
-                        <p class="maket-subtitle">Лендинг курсов повышения квалификации</p>
-                        <p>
-                            <a class="button button__maket" href="#">9 900 ₽</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="maket">
-                    <div class="maket-header">
-                        <div class="maket__icon"></div>
-                        <div class="maket__icon"></div>
-                        <div class="maket__icon"></div>
-                    </div>
-                    <div class="maket-main">
-                        <a href="#"><img src="img/catalog/maket-kvast.png" width="358" height="578" alt="Макет КВАСТ"></a>
-                    </div>
-                    <div class="maket-desk">
-                        <p><strong><a href="#">КВАСТ</a></strong></p>
-                        <p class="maket-subtitle">Промо-сайт производителякрафтового кваса</p>
-                        <p>
-                            <a class="button button__maket" href="#">9 900 ₽</a>
-                        </p>
-                    </div>
-                </div>
-                <div>
-                    <ul class="pagination-list">
-                        <li class="pagination-item">
-                            <a class="button button__pagination button__pagination--active" href="">1</a>
+        <section class="filter">
+            <h2 class="visually-hidden">Фильтр шаблонов</h2>
+            <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+                <fieldset>
+                    <legend class="text-bold">Стоимость:</legend>
+                    <input id="filter-price" name="filter-price" type="range" min="0" max="1500" step="10" value="1">
+                    <p>От <output id="valueMin">0</output></p>
+                    <p>До <output id="valueMax">1500</output></p>
+                </fieldset>
+                <fieldset>
+                    <legend class="text-bold">Сетка:</legend>
+                    <ul>
+                        <li>
+                            <label>
+                                <input id="filter-adaptive" name="grid-layout" type="radio" checked>
+                                Адаптивная
+                            </label>
                         </li>
-                        <li class="pagination-item">
-                            <a class="button button__pagination" href="#">2</a>
+                        <li>
+                            <label>
+                                <input id="filter-fix" name="grid-layout" type="radio">
+                                Фиксированная
+                            </label>
                         </li>
-                        <li class="pagination-item">
-                            <a class="button button__pagination" href="#">3</a>
-                        </li>
-                        <li class="pagination-item">
-                            <a class="button button__pagination" href="#">Следующая</a>
+                        <li>
+                            <input id="filter-flexible" name="grid-layout" type="radio">
+                            Резиновая
                         </li>
                     </ul>
-                </div>
-            </section>
-        </main>
+                </fieldset>
+                <fieldset>
+                    <legend class="text-bold">Особенности:</legend>
+                    <ul>
+                        <li>
+                            <label>
+                                <input id="filter-slider" name="slider" type="checkbox" checked>
+                                Слайдер
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input id="filter-advantages" name="advantages" type="checkbox">
+                                Блок преимуществ
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input id="filter-news" name="news" type="checkbox" checked>
+                                Новости
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input id="filter-gallery" name="gallery" type="checkbox">
+                                Галерея
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input id="filter-basket" name="basket" type="checkbox">
+                                Корзина
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button class="button button__grey" type="submit">Показать</button>
+            </form>
+        </section>
 
-        <footer class="footer">
-          <section class="footer-contacts">
-              <div class="container">
-                <div class="footer-map">
-                  <h2 class="visually-hidden">Контакты</h2>
-                  <h3 class="text-bold">NЁRDS DESIGN STUDIO</h3>
-                  <p>наб. Реки Карповки,<br>
-                    5 лит П, Санкт-Петербург
+        <section class="sort">
+            <h3 class="text-bold">Сортировать:</h3>
+            <div class="sort-type">
+              <ul class="sort-list">
+                <li class="sort-item">
+                    <a href="#">По цене</a>
+                </li>
+                <li class="sort-item">
+                    <a href="#">По типу</a>
+                </li>
+                <li class="sort-item">
+                    <a href="#">По названию</a>
+                </li>
+            </ul>
+            <ul class="sort-list">
+                <li class="sort-item">
+                    <a class="sort-item__icon" href="#">
+                        <img src="img/icon/arrow-down.svg" width="11" height="10" alt="Вниз">
+                    </a>
+                </li>
+                <li class="sort-item">
+                    <a href="#">
+                        <img src="img/icon/arrow-up.svg" width="11" height="10" alt="Вверх">
+                    </a>
+                </li>
+            </ul>
+            </div>
+        </section>
+
+        <section class="catalog">
+            <h2 class="visually-hidden">Каталог шаблонов</h2>
+            <div class="maket">
+                <div class="maket-header">
+                    <div class="maket__icon"></div>
+                    <div class="maket__icon"></div>
+                    <div class="maket__icon"></div>
+                </div>
+                <div class="maket-main"><!--<div class="maket-main maket__link">-->
+                    <a href="#"><img src="img/catalog/sedona-1.png" width="358" height="578" alt="Макет Sedona"></a>
+                </div>
+                <div class="maket-desk">
+                    <p><a href="#">Sedona</a></p>
+                    <p class="maket-subtitle">Информационный сайт<br> для туристов</p>
+                    <p>
+                        <a class="button button__maket" href="#">9 900 ₽</a>
                     </p>
-                  <p><a class="contacts-phone" href="tel:+78005558628" title="+7 800 555-86-28">+7 800 555-86-28</a></p>
-                  <p>
-                      <a class="button button__footer" href="#">Напишите нам</a>
-                  </p>
                 </div>
-              </div>
-          </section>
-          <section class="container">
-              <div class="footer-social">
-                <h2 class="visually-hidden">Социальные сети</h2>
-                <div class="social">
-                  <p class="social-button">
-                    <a href="#"><img src="img/icon/vk.svg" width="26" height="15" alt="Вконтакте"></a>
-                  </p>
-                  <p class="social-button">
-                      <a href="#"><img src="img/icon/fb.svg" width="12" height="22" alt="Facebook"></a>
-                  </p>
-                  <p class="social-button">
-                      <a href="#"><img src="img/icon/insta.svg" width="21" height="21" alt="Instagram"></a>
-                  </p>
+            </div>
+            <div class="maket">
+                <div class="maket-header">
+                    <div class="maket__icon"></div>
+                    <div class="maket__icon"></div>
+                    <div class="maket__icon"></div>
                 </div>
-                <div class="social-text">
-                    <p class="footer-title">Давайте дружить, это выгодно!</p>
-                    <p class="footer-subtitle">Скидка 10% для друзей из социальных сетей.</p>
+                <div class="maket-main">
+                    <a href="#"><img src="img/catalog/maket-pink-app.png" width="358" height="578" alt="Макет Pink App"></a>
                 </div>
-              </div>
-          </section>
-      </footer>
+                <div class="maket-desk">
+                    <p><a href="#">Pink App</a></p>
+                    <p class="maket-subtitle">Продуктовый лендинг<br> приложения для iOS и Android</p>
+                    <p>
+                        <a class="button button__maket" href="#">9 900 ₽</a>
+                    </p>
+                </div>
+            </div>
+            <div class="maket">
+                <div class="maket-header">
+                    <div class="maket__icon"></div>
+                    <div class="maket__icon"></div>
+                    <div class="maket__icon"></div>
+                </div>
+                <div class="maket-main">
+                    <a href="#"><img src="img/catalog/maket-barbershop-borodinski.png" width="358" height="578" alt="Макет Barbershop Borodinski"></a>
+                </div>
+            </div>
+            <div class="maket">
+                <div class="maket-header">
+                    <div class="maket__icon"></div>
+                    <div class="maket__icon"></div>
+                    <div class="maket__icon"></div>
+                </div>
+                <div class="maket-main">
+                    <a href="#"><img src="img/catalog/maket-mishka.png" width="358" height="578" alt="Макет Mishka"></a>
+                </div>
+            </div>
+            <div class="maket">
+                <div class="maket-header">
+                    <div class="maket__icon"></div>
+                    <div class="maket__icon"></div>
+                    <div class="maket__icon"></div>
+                </div>
+                <div class="maket-main">
+                    <a href="#"><img src="img/catalog/maket-a-plus.png" width="358" height="578" alt="Макет A Plus"></a>
+                </div>
+                <div class="maket-desk">
+                    <p><a href="#">A Plus</a></p>
+                    <p class="maket-subtitle">Лендинг курсов повышения<br> квалификации</p>
+                    <p>
+                        <a class="button button__maket" href="#">9 900 ₽</a>
+                    </p>
+                </div>
+            </div>
+            <div class="maket">
+                <div class="maket-header">
+                    <div class="maket__icon"></div>
+                    <div class="maket__icon"></div>
+                    <div class="maket__icon"></div>
+                </div>
+                <div class="maket-main">
+                    <a href="#"><img src="img/catalog/maket-kvast.png" width="358" height="578" alt="Макет КВАСТ"></a>
+                </div>
+                <div class="maket-desk">
+                    <p><a href="#">КВАСТ</a></strong></p>
+                    <p class="maket-subtitle">Промо-сайт производителя<br> крафтового кваса</p>
+                    <p>
+                        <a class="button button__maket" href="#">9 900 ₽</a>
+                    </p>
+                </div>
+            </div>
+            <div>
+                <ul class="pagination-list">
+                    <li class="pagination-item">
+                        <a class="button button__pagination button__pagination--active" href="">1</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a class="button button__pagination" href="#">2</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a class="button button__pagination" href="#">3</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a class="button button__pagination" href="#">Следующая</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
 
-        <section class="modal">
-          <h2>Напишите нам</h2>
-          <button class="modal-close" type="button">Закрыть</button>
-          <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-              <label class="modal-item">
-                  Ваше имя:
-                  <input id="fullName" type="text" name="fullName" placeholder="Имя Фамилия">
-              </label>
-              <label class="modal-item">
-                  Ваш email:
-                  <input id="userEmail" type="email" name="userEmail" placeholder="email@example.com">
-              </label>
-              <label class="modal-item">
-                  Текст письма:
-                  <textarea id="contentMessage" name="contentMessage" placeholder="В свободной форме"></textarea>
-              </label>
-              <button class="button" type="submit">Отправить</button>
-          </form>
+    <footer class="footer" id="contact">
+      <section class="footer-contacts">
+          <div class="container">
+            <div class="footer-map">
+              <h2 class="visually-hidden">Контакты</h2>
+              <h3 class="text-bold">NЁRDS DESIGN STUDIO</h3>
+              <p>наб. Реки Карповки,<br>
+                5 лит П, Санкт-Петербург
+                </p>
+              <p><a class="contacts-phone" href="tel:+78005558628" title="+7 800 555-86-28">+7 800 555-86-28</a></p>
+              <p>
+                  <a class="button button__footer" href="modal.html">Напишите нам</a>
+              </p>
+            </div>
+          </div>
       </section>
-    </body>
+      <section class="container">
+          <div class="footer-social">
+            <h2 class="visually-hidden">Социальные сети</h2>
+            <div class="social">
+              <p class="social-button">
+                <a href="#"><img src="img/icon/vk.svg" width="26" height="15" alt="Вконтакте"></a>
+              </p>
+              <p class="social-button">
+                  <a href="#"><img src="img/icon/fb.svg" width="12" height="22" alt="Facebook"></a>
+              </p>
+              <p class="social-button">
+                  <a href="#"><img src="img/icon/insta.svg" width="21" height="21" alt="Instagram"></a>
+              </p>
+            </div>
+            <div class="social-text">
+                <p class="footer-title">Давайте дружить, это выгодно!</p>
+                <p class="footer-subtitle">Скидка 10% для друзей из социальных сетей.</p>
+            </div>
+          </div>
+      </section>
+    </footer>
+  </body>
 </html>

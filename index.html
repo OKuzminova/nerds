@@ -95,7 +95,7 @@
                 </ul>
             </section>
 
-            <section class="studio container">
+            <section class="studio container" id="studio">
                 <h2 class="visually-hidden">О студии</h2>
                 <div class="studio-text">
                     <h3 class="h2">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
@@ -127,7 +127,7 @@
                 </div>
             </section>
 
-            <section class="client container">
+            <section class="client container" id="client">
                 <h2 class="visually-hidden">Клиенты</h2>
                 <div class="client-list">
                     <p>
@@ -154,7 +154,7 @@
             </section>
         </main>
 
-        <footer class="footer">
+        <footer class="footer" id="contact">
             <section class="footer-contacts">
                 <div class="container">
                   <div class="footer-map">
@@ -165,7 +165,7 @@
                       </p>
                     <p><a class="contacts-phone" href="tel:+78005558628" title="+7 800 555-86-28">+7 800 555-86-28</a></p>
                     <p>
-                        <a class="button button__footer" href="#">Напишите нам</a>
+                        <a class="button button__footer" href="modal.html">Напишите нам</a>
                     </p>
                   </div>
                 </div>
@@ -192,24 +192,6 @@
             </section>
         </footer>
 
-        <section class="modal">
-            <h2>Напишите нам</h2>
-            <button class="modal-close" type="button">Закрыть</button>
-            <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-                <label class="modal-item">
-                    Ваше имя:
-                    <input id="fullName" type="text" name="fullName" placeholder="Имя Фамилия">
-                </label>
-                <label class="modal-item">
-                    Ваш email:
-                    <input id="userEmail" type="email" name="userEmail" placeholder="email@example.com">
-                </label>
-                <label class="modal-item">
-                    Текст письма:
-                    <textarea id="contentMessage" name="contentMessage" placeholder="В свободной форме"></textarea>
-                </label>
-                <button class="button button__modal" type="submit">Отправить</button>
-            </form>
-        </section>
+
     </body>
 </html>
