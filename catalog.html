@@ -35,7 +35,7 @@
               </li>
           </ul>
           <div class="user-nav">
-            <a href="blank.html" target="_blank">Корзина</a>
+            <a class="nav-link" href="blank.html" target="_blank">Корзина</a>
           </div>
       </nav>
       <h1 class="h1">Магазин готовых шаблонов</h1>
@@ -54,22 +54,24 @@
                 </fieldset>
                 <fieldset>
                     <legend class="text-bold">Сетка:</legend>
-                    <ul>
-                        <li>
-                            <label>
-                                <input id="filter-adaptive" name="grid-layout" type="radio" checked>
-                                Адаптивная
-                            </label>
+                    <ul class="filter-list">
+                        <li class="filter-item">
+                          <label class="filter-radio">
+                              <input class="visually-hidden filter-input-radio" id="filter-adaptive" name="grid-layout" type="radio" checked>
+                              Адаптивная
+                          </label>
                         </li>
-                        <li>
-                            <label>
-                                <input id="filter-fix" name="grid-layout" type="radio">
-                                Фиксированная
-                            </label>
+                        <li class="filter-item">
+                          <label class="filter-radio">
+                              <input class="visually-hidden filter-input-radio" id="filter-fix" name="grid-layout" type="radio">
+                              Фиксированная
+                          </label>
                         </li>
-                        <li>
-                            <input id="filter-flexible" name="grid-layout" type="radio">
-                            Резиновая
+                        <li class="filter-item">
+                          <label class="filter-radio">
+                              <input class="visually-hidden filter-input-radio" id="filter-flexible" name="grid-layout" type="radio">
+                              Резиновая
+                          </label>
                         </li>
                     </ul>
                 </fieldset>
