@@ -5,8 +5,8 @@
       <title>Nerds – Каталог шаблонов</title>
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/style.min.css">
       <link rel="stylesheet" href="css/style.css">
-
       <link rel="icon" href="favicon.ico">
       <link rel="icon" href="img/favicon/152.svg" type="image/svg+xml">
       <link rel="apple-touch-icon" href="img/favicon/180.png">
@@ -48,9 +48,29 @@
             <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
                 <fieldset>
                     <legend class="text-bold">Стоимость:</legend>
-                    <input id="filter-price" name="filter-price" type="range" min="0" max="1500" step="10" value="1">
+                    <div class="range">
+
+                      <div class="range-control">
+                        <div class="scale">
+                          <div class="bar" style="width: 70%; margin-left: 0%;"></div>
+                        </div>
+                        <div class="toggle toggle-min" tabindex="0" style="left: 0%; margin-left: 22px;"></div>
+                        <div class="toggle toggle-max" tabindex="0"style="left: 60%; margin-left: 22px;"></div>
+                      </div>
+
+                      <div class="price">
+                        <label class="min-price">
+                          от <input type="number" name="min-price" value="0">
+                        </label>
+                        <label>
+                          до <input type="number" name="max-price" value="15000">
+                        </label>
+                      </div>
+
+                    </div>
+                    <!-- <input id="filter-price" name="filter-price" type="range" min="0" max="1500" step="10" value="1">
                     <p>От <output id="valueMin">0</output></p>
-                    <p>До <output id="valueMax">1500</output></p>
+                    <p>До <output id="valueMax">1500</output></p> -->
                 </fieldset>
                 <fieldset>
                     <legend class="text-bold">Сетка:</legend>
