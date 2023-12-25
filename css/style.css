@@ -893,6 +893,9 @@ h3.text-bold {
   justify-content: space-between;
   align-items: center;
 }
+.form-hidden {
+  display: none;
+}
 .container .modal {
   margin-left: 100px;
 }
