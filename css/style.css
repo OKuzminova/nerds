@@ -403,7 +403,6 @@ h3.text-bold {
   border: none;
   padding: 0px;
   cursor: pointer;
-
 }
 .current {
   outline: 2px solid var(--color-grey-border-focus);
@@ -775,6 +774,15 @@ h3.text-bold {
   user-select: none;
   padding-left: 5px;
 }
+.filter-input-radio:hover + .filter-radio::before {
+  opacity: 1;
+}
+.filter-input-radio:focus-visible + .filter-radio::before {
+  opacity: 1;
+}
+.filter-input-radio:disabled + .filter-radio::before {
+  opacity: 0.2;
+}
 .filter-input-radio + .filter-radio::before {
   content: "";
   position: absolute;
@@ -786,6 +794,7 @@ h3.text-bold {
   border-radius: 50%;
   opacity: 0.4;
 }
+
 .filter-input-radio:checked + .filter-radio::after {
   content: "";
   position: absolute;
@@ -797,6 +806,16 @@ h3.text-bold {
   border-radius: 50%;
   opacity: 0.4;
 }
+.filter-input-radio:hover + .filter-radio::after {
+  opacity: 1;
+}
+.filter-input-radio:focus-visible + .filter-radio::after {
+  opacity: 1;
+}
+.filter-input-radio:disabled + .filter-radio::after {
+  opacity: 0.2;
+}
+
 /* checkbox */
 .filter-input-checkbox + .filter-checkbox::before {
   content: "";
@@ -817,13 +836,19 @@ h3.text-bold {
   left: -30px;
   height: 23px;
   width: 25px;
-  background-image: url(../img/icon/checkbox-icon.svg);
+  background-image: url(../img/icon/checkbox-on.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
-  opacity: 1;
+  opacity: 0.4;
 }
 .filter-input-checkbox:hover + .filter-checkbox::before {
   opacity: 1;
+}
+.filter-input-checkbox:focus-visible + .filter-checkbox::before {
+  opacity: 1;
+}
+.filter-input-checkbox:disabled + .filter-checkbox::before {
+  opacity: 0.2;
 }
 /* range */
 .range-control {
@@ -882,7 +907,7 @@ h3.text-bold {
 .modal {
   position: fixed;
   width: 860px;
-  bottom: 180px;
+  bottom: 200px;
   margin: 0 auto;
   background-color: var(--color-white);
   box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.40);
@@ -891,6 +916,9 @@ h3.text-bold {
   display: grid;
   grid-template-columns: 1fr 21px;
   justify-content: space-between;
+  grid-template-areas:
+    "h2 close"
+    "modal modal";
   align-items: center;
 }
 .form-hidden {
@@ -901,8 +929,30 @@ h3.text-bold {
 }
 .modal .h2 {
   font-weight: 700;
+  grid-area: h2;
+}
+.modal-close {
+  background-image: url(../img/icon/close.svg);
+  width: 21px;
+  height: 21px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  opacity: 0.3;
+  padding: 0;
+  grid-area: close;
+}
+.modal-close:hover {
+  opacity: 1;
+}
+.modal-close:focus {
+  opacity: 1;
+}
+.modal-close:active {
+  opacity: 0.1;
 }
 .modal-form {
+  grid-area: modal;
   margin-top: 37px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -945,22 +995,6 @@ h3.text-bold {
 .button__modal {
   margin-top: 13px;
   width: 259px;
-}
-.modal-close {
-  background-image: url(../img/icon/close.svg);
-  width: 21px;
-  height: 21px;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
-  opacity: 0.3;
-  padding: 0;
-}
-.modal-close:hover {
-  opacity: 1;
-}
-.modal-close:active {
-  opacity: 0.1;
 }
 
 /* Пустая страница blank */
