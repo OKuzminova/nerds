@@ -26,22 +26,27 @@ function addClass () {
 };
 
 closeModal.addEventListener("click", addClass); //Закртытие по кнопке
-// body.addEventListener("click", addClass); //Закрытие при нажатии окна в любом месте
+body.addEventListener("click", addClass); //Закрытие при нажатии окна в любом месте
 
 
 //Слайдер
 var blockSlider = document.querySelector(".slider-controls"); //Блок со всеми кнопками
-console.log(blockSlider);
 var btnSlider = blockSlider.querySelectorAll("button"); //Массив кнопок слайдера
-console.log(btnSlider);
-const arrBtn = [];
+var blockCharacter = document.querySelector(".character-list"); //Блок со всеми характеристиками
+var elementCharacter = document.querySelectorAll(".character-item"); //Массив со всеми характеристиками
+
+console.log(elementCharacter.length + " = Длина массива со всеми слайдами");
 
 blockSlider.addEventListener("click", function(active) {
-  const target = active.target
-  Array.from(btnSlider).forEach(item => {
+  const target = active.target; //Получение элемента на котором произошло событие (исходный)
+  btnSlider.forEach(item => { //Перебираю масив и удаляю все классы со стилями current
     item.classList.remove("current");
-    console.log("remove");
   });
-  target.classList.add("current");
-  console.log("add");
+  elementCharacter.forEach(item => { //Перебираю массив со слайдами и добавляю класс character-hidden
+    item.classList.add("character-hidden");
+  });
+  target.classList.add("current"); //Добавляю класс к услышанному элементу
+  console.log("add " + target.innerHTML);
+  var indexSlider = target.innerHTML;
+  elementCharacter[indexSlider-1].classList.remove("character-hidden");
 });
