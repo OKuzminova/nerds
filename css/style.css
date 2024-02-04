@@ -286,7 +286,7 @@ h3.text-bold {
   background-color: var(--color-grey-base);
 }
 .header-nav {
-  padding: 49px 0 0;
+  padding: 55px 0 0;
   display: grid;
   grid-template-columns: 160px 437px max-content;
   justify-content: space-between;
@@ -320,7 +320,7 @@ h3.text-bold {
   align-items: center;
 }
 .site-nav a[href="#"] {
-  padding-bottom: 13px;
+  padding-bottom: 16px;
   border-bottom: 2px solid var(--color-red-base);
 }
 .user-nav {
@@ -360,9 +360,10 @@ h3.text-bold {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 5px;
 }
 .character-item .h1 {
-  padding-bottom: 37px;
+  padding-bottom: 8px;
 }
 .character-text {
   padding-bottom: 26px;
@@ -388,12 +389,15 @@ h3.text-bold {
 }
 .slider-controls {
   position: absolute;
-  bottom: 78px;
-  left: 47%;
+  bottom: 94px;
+  left: 48%;
   z-index: 20;
   display: flex;
   justify-content: space-between;
   width: 88px;
+}
+.button__slider {
+  padding: 17px 54px 15px;
 }
 .slider-controls button {
   background-color: var(--color-white);
@@ -403,6 +407,7 @@ h3.text-bold {
   border: none;
   padding: 0px;
   cursor: pointer;
+  color: var(--color-white);
 }
 .current {
   outline: 2px solid var(--color-grey-border-focus);
